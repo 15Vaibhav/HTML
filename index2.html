@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+body{
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    }
+    .container{
+        width:100%;
+   margin: auto;
+   padding-top: 4%;
+  padding-bottom: 4%;
+    }
+    .row{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding: 0%;
+margin: 0%;
+}
+.row::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.col-2{
+    margin: 0%;
+    padding: 0%;
+}
+              
+
+.col-1{width: 8.33%}
+.col-2{width: 16.66%}
+.col-3{width: 25%}
+.col-4{width: 33.33%}
+.col-5{width: 41.66%}
+.col-6{width: 50%}
+.col-7{width: 58.33%}
+.col-8{width: 66.66%}
+.col-9{width: 75%}
+.col-10{width: 83.33%}
+.col-11{width: 91.66%}
+.col-12{width: 100%}
+div.box{
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15),
+    0 2px 3px 0 rgba(0,0,0,0.1);
+}
+div.box h6{
+text-align: center;
+color :#696969;
+line-height: 1em;
+padding: 0%;
+margin-bottom: 8%;
+padding-top: 2%
+}
+div.box h2{
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: sans-serif;
+
+}
+p{
+    padding: 0%;
+    margin: 0%;
+}
+.col-3 p{
+    color: #696969;
+    font-size: 15px;
+    font-family: sans-serif;
+     font-weight: bold;
+     text-align: center;
+     margin: 0%;
+}
+.col-2 p{
+    color: #696969;
+    font-size: 12px;
+    font-family: sans-serif;
+     font-weight: bold;
+     text-align: center;
+     margin: 0%;
+}
+.col-3 p>small{
+    color: #696969;
+    font-size: 8px;
+    font-style: italic;
+     font-weight: bold;
+
+    
+}
+img{
+    width: 20px;
+    height: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+table, th, td {
+      padding:0;
+      margin: 0;
+      text-align: center;
+      border-collapse: collapse;
+      width: 100%
+    }
+table ,th{
+        height: 40px;
+        font-size: 13px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 525;
+    }
+    th.muc{
+        width: 15%
+    }
+    th.remainth{
+        width: 22.33%
+    }
+  table.nestedtable {
+    margin: 0%;
+    padding: 0%;
+     border-right-style: hidden;
+     border-bottom-style:none;
+     border-top-style: none;
+     border-left-style: none; 
+     color: black; 
+
+    }
+    td{
+      
+      vertical-align: center;
+      text-align: center;
+      width: 800px;
+      }
+
+  .loss{
+      background-color: #DE3E3E;
+      opacity: .7;
+      color: black ;
+      font-weight: 900;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 14px; 
+  }
+  .growth{
+      background-color: #1AB20F;
+      opacity: .7;
+      color: black ;
+      font-weight: 900;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 14px; 
+  }
+  .midclass{
+      background-color: #AFEEEE;
+      opacity: .7;
+      color: black ;
+      font-weight: 900;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 14px; 
+  }
+  .lessloss{
+    background-color:#FFB6C1;
+      opacity: .7;
+      color: black ;
+      font-weight: 900;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 14px; 
+  }
+  @media screen and (max-width:680px){
+    [class*='col-']{
+        width: 100%
+    }
+  }
+</style>
+</head>
+<body>
+       <div class="container">
+           <div class="row">
+               <div class="col-3"></div>
+               <div class="col-2">
+                   <div class="box">
+                        <h6>NARTD, Gr%</h6>
+                        <h2>$1.1 M</h2>
+                        <div class="row">
+                            <div class="col-2" style="margin-left:4px"><p>WTD</p></div>
+                                <div class="col-3"><p>0.8</p>
+                                    <p><small>previous</small></p>
+                                </div>
+                                <div class="col-3"><p style="color:limegreen">+10.4%</p>
+                                    <p><small>% Change</small></p>
+                                </div>
+                                <div class="col-3"><img src="./growth.svg">
+                                    <p><small>Trend</small></p>
+                                </div>
+                              </div>
+                              <br>
+                              <h2>$1.1 M</h2>
+                              <div class="row">
+                                  <div class="col-2" style="margin-left:4px"><p>MTD</p></div>
+                                      <div class="col-3"><p>0.8</p>
+                                          <p><small>previous</small></p>
+                                      </div>
+                                      <div class="col-3"><p style="color:limegreen">+10.4%</p>
+                                          <p><small>% Change</small></p>
+                                      </div>
+                                      <div class="col-3"><img src="./growth.svg">
+                                          <p><small>Trend</small></p>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <h2>$1.1 M</h2>
+                                    <div class="row">
+                                        <div class="col-2" style="margin-left:4px"><p>YTD</p></div>
+                                            <div class="col-3"><p>0.8</p>
+                                                <p><small>previous</small></p>
+                                            </div>
+                                            <div class="col-3"><p style="color:limegreen">+10.4%</p>
+                                                <p><small>% Change</small></p>
+                                            </div>
+                                            <div class="col-3"><img src="./growth.svg">
+                                                <p><small>Trend</small></p>
+                                            </div>
+                                          </div>
+
+                           
+                   </div>
+               </div>
+               
+               <div class="col-4">
+                    <table border="1">
+                            <tr>
+                              <th class="muc">in MUC</th>
+                              <th class="remainth">WTD</th> 
+                              <th class="remainth">MTD</th>
+                              <th class="remainth"> YTD</th>
+                            </tr>
+                            <tr >
+                               <td>Jill</td>
+                               <td>
+                                   <table border="1"  class="nestedtable">
+                                       <tr>
+                                           <td class="growth">10%</td>
+                                           <td>
+                                             <table>
+                                               <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                               
+                                               <tr><td>+1.2</td></tr>
+                                             </table>
+                                           </td>
+                                         </tr>
+                                     </table>
+                             </td>
+                               <td>
+                                   <table border="1"  class="nestedtable">
+                                       <tr>
+                                           <td class="growth">10%</td>
+                                           <td>
+                                             <table>
+                                               <tr style="border-bottom:1px solid #A9A9A9"><td>6</td></tr>
+                                               
+                                               <tr><td>+1.2</td></tr>
+                                             </table>
+                                           </td>
+                                         </tr>
+                                     </table>
+                               </td>
+                               <td>
+                                   <table border="1"  class="nestedtable">
+                                       <tr>
+                                           <td class="growth">10%</td>
+                                           <td>
+                                             <table>
+                                               <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                               
+                                               <tr><td>+1.2</td></tr>
+                                             </table>
+                                           </td>
+                                         </tr>
+                                     </table>
+                               </td>
+                             </tr>
+                             <tr >
+                                 <td>Jill</td>
+                                 <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="midclass">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>
+                               </td>
+                                 <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="midclass">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>
+                                 </td>
+                                 <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="midclass">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>   
+                                 </td>
+                               </tr>
+                                <tr >
+                              <td>Jill</td>
+                              <td>
+                                 <table border="1"  class="nestedtable">
+                                     <tr>
+                                         <td class="lessloss">10%</td>
+                                         <td>
+                                           <table>
+                                             <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                             
+                                             <tr><td>+1.2</td></tr>
+                                           </table>
+                                         </td>
+                                       </tr>
+                                   </table>
+                            </td>
+                              <td>
+                                 <table border="1"  class="nestedtable">
+                                     <tr>
+                                         <td class="lessloss">10%</td>
+                                         <td>
+                                           <table>
+                                             <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                             
+                                             <tr><td>+1.2</td></tr>
+                                           </table>
+                                         </td>
+                                       </tr>
+                                   </table>
+                              </td>
+                              <td>
+                                 <table border="1"  class="nestedtable">
+                                     <tr>
+                                         <td class="lessloss">10%</td>
+                                         <td>
+                                           <table>
+                                             <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                             
+                                             <tr><td>+1.2</td></tr>
+                                           </table>
+                                         </td>
+                                       </tr>
+                                   </table>
+                              </td>
+                            </tr>
+                              
+                             <tr >
+                                 <td>Jill</td>
+                                 <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="loss">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>
+                               </td>
+                                 <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="loss">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>
+                                 </td>
+                                 <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="loss">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>
+                                 </td>
+                               </tr>
+                               <tr >
+                                   <td>Jill</td>
+                                   <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="loss">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>
+                                 </td>
+                                   <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="loss">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>
+                                   </td>
+                                   <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="loss">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>   
+                                   </td>
+                                 </tr>
+                                  <tr >
+                                <td>Jill</td>
+                                <td>
+                                   <table border="1"  class="nestedtable">
+                                       <tr>
+                                           <td class="growth">10%</td>
+                                           <td>
+                                             <table>
+                                               <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                               
+                                               <tr><td>+1.2</td></tr>
+                                             </table>
+                                           </td>
+                                         </tr>
+                                     </table>
+                              </td>
+                                <td>
+                                   <table border="1"  class="nestedtable">
+                                       <tr>
+                                           <td class="growth">10%</td>
+                                           <td>
+                                             <table>
+                                               <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                               
+                                               <tr><td>+1.2</td></tr>
+                                             </table>
+                                           </td>
+                                         </tr>
+                                     </table>
+                                </td>
+                                <td>
+                                   <table border="1"  class="nestedtable">
+                                       <tr>
+                                           <td class="growth">10%</td>
+                                           <td>
+                                             <table>
+                                               <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                               
+                                               <tr><td>+1.2</td></tr>
+                                             </table>
+                                           </td>
+                                         </tr>
+                                     </table>
+                                </td>
+                              </tr>
+                              
+                               </table>
+
+               </div>
+               <div class="col-3"></div>
+           </div>
+
+           <div class="row" style="margin-top:8%">
+                <div class="col-3"></div>
+                <div class="col-2">
+                    <div class="box">
+                         <h6>NARTD, Gr%</h6>
+                         <h2>$1.1 M</h2>
+                         <div class="row">
+                             <div class="col-2" style="margin-left:4px"><p>WTD</p></div>
+                                 <div class="col-3"><p>0.8</p>
+                                     <p><small>Previous</small></p>
+                                 </div>
+                                 <div class="col-3"><p style="color:limegreen">+10.4%</p>
+                                     <p><small>% Change</small></p>
+                                 </div>
+                                 <div class="col-3"><img src="./growth.svg">
+                                     <p><small>Trend</small></p>
+                                 </div>
+                               </div>
+                               <br>
+                               <h2>$1.1 M</h2>
+                               <div class="row">
+                                   <div class="col-2" style="margin-left:4px"><p>MTD</p></div>
+                                       <div class="col-3"><p>0.8</p>
+                                           <p><small>previous</small></p>
+                                       </div>
+                                       <div class="col-3"><p style="color:limegreen">+10.4%</p>
+                                           <p><small>% Change</small></p>
+                                       </div>
+                                       <div class="col-3"><img src="./growth.svg">
+                                           <p><small>Trend</small></p>
+                                       </div>
+                                     </div>
+                                     <hr>
+                                     <h2>$1.1 M</h2>
+                                     <div class="row">
+                                         <div class="col-2" style="margin-left:4px"><p>YTD</p></div>
+                                             <div class="col-3"><p>0.8</p>
+                                                 <p><small>previous</small></p>
+                                             </div>
+                                             <div class="col-3"><p style="color:limegreen">+10.4%</p>
+                                                 <p><small>% Change</small></p>
+                                             </div>
+                                             <div class="col-3"><img src="./growth.svg">
+                                                 <p><small>Trend</small></p>
+                                             </div>
+                                           </div>
+ 
+                            
+                    </div>
+                </div>
+                
+                <div class="col-4">
+                        <table border="1">
+                                <tr>
+                                  <th class="muc">in MUC</th>
+                                  <th class="remainth">WTD</th> 
+                                  <th class="remainth">MTD</th>
+                                  <th class="remainth"> YTD</th>
+                                </tr>
+                                <tr >
+                                   <td>Jill</td>
+                                   <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="growth">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>
+                                 </td>
+                                   <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="growth">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>
+                                   </td>
+                                   <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="growth">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>
+                                   </td>
+                                 </tr>
+                                 <tr >
+                                     <td>Jill</td>
+                                     <td>
+                                         <table border="1"  class="nestedtable">
+                                             <tr>
+                                                 <td class="midclass">10%</td>
+                                                 <td>
+                                                   <table>
+                                                     <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                     
+                                                     <tr><td>+1.2</td></tr>
+                                                   </table>
+                                                 </td>
+                                               </tr>
+                                           </table>
+                                   </td>
+                                     <td>
+                                         <table border="1"  class="nestedtable">
+                                             <tr>
+                                                 <td class="midclass">10%</td>
+                                                 <td>
+                                                   <table>
+                                                     <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                     
+                                                     <tr><td>+1.2</td></tr>
+                                                   </table>
+                                                 </td>
+                                               </tr>
+                                           </table>
+                                     </td>
+                                     <td>
+                                         <table border="1"  class="nestedtable">
+                                             <tr>
+                                                 <td class="midclass">10%</td>
+                                                 <td>
+                                                   <table>
+                                                     <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                     
+                                                     <tr><td>+1.2</td></tr>
+                                                   </table>
+                                                 </td>
+                                               </tr>
+                                           </table>   
+                                     </td>
+                                   </tr>
+                                    <tr >
+                                  <td>Jill</td>
+                                  <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="lessloss">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>
+                                </td>
+                                  <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="lessloss">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>
+                                  </td>
+                                  <td>
+                                     <table border="1"  class="nestedtable">
+                                         <tr>
+                                             <td class="lessloss">10%</td>
+                                             <td>
+                                               <table>
+                                                 <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                 
+                                                 <tr><td>+1.2</td></tr>
+                                               </table>
+                                             </td>
+                                           </tr>
+                                       </table>
+                                  </td>
+                                </tr>
+                                  
+                                 <tr >
+                                     <td>Jill</td>
+                                     <td>
+                                         <table border="1"  class="nestedtable">
+                                             <tr>
+                                                 <td class="loss">10%</td>
+                                                 <td>
+                                                   <table>
+                                                     <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                     
+                                                     <tr><td>+1.2</td></tr>
+                                                   </table>
+                                                 </td>
+                                               </tr>
+                                           </table>
+                                   </td>
+                                     <td>
+                                         <table border="1"  class="nestedtable">
+                                             <tr>
+                                                 <td class="loss">10%</td>
+                                                 <td>
+                                                   <table>
+                                                     <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                     
+                                                     <tr><td>+1.2</td></tr>
+                                                   </table>
+                                                 </td>
+                                               </tr>
+                                           </table>
+                                     </td>
+                                     <td>
+                                         <table border="1"  class="nestedtable">
+                                             <tr>
+                                                 <td class="loss">10%</td>
+                                                 <td>
+                                                   <table>
+                                                     <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                     
+                                                     <tr><td>+1.2</td></tr>
+                                                   </table>
+                                                 </td>
+                                               </tr>
+                                           </table>
+                                     </td>
+                                   </tr>
+                                   <tr >
+                                       <td>Jill</td>
+                                       <td>
+                                           <table border="1"  class="nestedtable">
+                                               <tr>
+                                                   <td class="loss">10%</td>
+                                                   <td>
+                                                     <table>
+                                                       <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                       
+                                                       <tr><td>+1.2</td></tr>
+                                                     </table>
+                                                   </td>
+                                                 </tr>
+                                             </table>
+                                     </td>
+                                       <td>
+                                           <table border="1"  class="nestedtable">
+                                               <tr>
+                                                   <td class="loss">10%</td>
+                                                   <td>
+                                                     <table>
+                                                       <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                       
+                                                       <tr><td>+1.2</td></tr>
+                                                     </table>
+                                                   </td>
+                                                 </tr>
+                                             </table>
+                                       </td>
+                                       <td>
+                                           <table border="1"  class="nestedtable">
+                                               <tr>
+                                                   <td class="loss">10%</td>
+                                                   <td>
+                                                     <table>
+                                                       <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                       
+                                                       <tr><td>+1.2</td></tr>
+                                                     </table>
+                                                   </td>
+                                                 </tr>
+                                             </table>   
+                                       </td>
+                                     </tr>
+                                      <tr >
+                                    <td>Jill</td>
+                                    <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="growth">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>
+                                  </td>
+                                    <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="growth">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>
+                                    </td>
+                                    <td>
+                                       <table border="1"  class="nestedtable">
+                                           <tr>
+                                               <td class="growth">10%</td>
+                                               <td>
+                                                 <table>
+                                                   <tr style="border-bottom:1px solid #A9A9A9;"><td>6</td></tr>
+                                                   
+                                                   <tr><td>+1.2</td></tr>
+                                                 </table>
+                                               </td>
+                                             </tr>
+                                         </table>
+                                    </td>
+                                  </tr>
+                                  
+                                   </table>
+ 
+                </div>
+                <div class="col-3"></div>
+            </div>
+       </div>
+
+</body>
+</html>
